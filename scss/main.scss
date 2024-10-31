@@ -77,4 +77,49 @@ header {
         }
     }
 }
+/* Estilos básicos del contenedor de productos */
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+/* Estilo para cada producto */
+.producto {
+    width: 200px;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Imagen de producto */
+.producto img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+/* Animación al pasar el cursor */
+.producto:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Mayor sombra */
+}
+
+/* Animación para la imagen en hover */
+.producto:hover img {
+    transform: scale(1.1); /* Agranda solo la imagen */
+}
+
+/* Animación para el botón en hover */
+
+.producto button:hover {
+    background-color: #2ecc71; /* Cambia el color del botón */
+}
+
 
